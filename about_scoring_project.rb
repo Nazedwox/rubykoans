@@ -51,6 +51,7 @@ def score(dice)
 
   scores += (ones / 3) * 1000
   scores += (ones % 3) * 100
+  scores += (fives / 3) * 500
   scores += (fives % 3) * 50
   numbers.each{ |k, v|
     scores += (v / 3) * k * 100
